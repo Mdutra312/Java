@@ -1,0 +1,47 @@
+package metodo;
+
+public class Produto {
+	String nome;
+	int codigo;
+	double precoCusto;
+	double precoVenda; 
+	public int quantidade;
+	double margemLuc;
+	public int registrarSaida1;
+	public int registrarEntrada;
+	
+	
+	public int registrarSaida1(int quantidadeSaida){
+		
+		this.quantidade = quantidade-quantidadeSaida;
+		System.out.println("quantidade:"+quantidade);
+		return quantidade;
+		
+	}
+	public int registrarEntrada1( int estoque){
+		
+		this.quantidade=this.quantidade+estoque;
+		return this.registrarEntrada;
+	}
+	public void calcularPrecovenda(){
+		this.precoVenda=precoCusto+(margemLuc*precoCusto)/100;
+	}
+	public double definirPrecoVenda(double verifica, double verifica2 ) {
+		if(precoVenda<precoCusto) {
+			System.out.println("O valor de venda é menor do que o valor de compra!");
+		return verifica2;
+		}
+		return verifica;
+		}
+	public void exibirDados(){
+		System.out.println("nome:"+this.nome);
+		System.out.println("preco custo:"+this.precoCusto);
+		System.out.println("preço de venda:"+this.precoVenda);
+		System.out.println("quantidade saida:"+this.registrarSaida1);
+		System.out.println("codigo:"+this.codigo);
+
+		
+	}
+		
+	}
+	

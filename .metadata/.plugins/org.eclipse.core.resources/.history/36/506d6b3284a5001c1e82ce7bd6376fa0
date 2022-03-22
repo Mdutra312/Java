@@ -1,0 +1,49 @@
+package metodo;
+public class Produto {
+		
+	
+	String nome;
+	int codigo;
+	double precoCusto;
+	double precoVenda;
+	int quantidade;
+	int quantidadeVenda;
+	double precoVenda2;
+	double margemLuc;
+	public int registrarEntrada(int quantidade){
+		
+		this.quantidade = quantidade;
+		return quantidade;
+	} 
+	//certo
+	
+	public int registrarSaida(int quantidadeVenda ){
+		
+		 this.quantidadeVenda = quantidadeVenda;
+		 
+		 
+		 return quantidadeVenda;
+	}
+	
+	public Double DefinirPrecoVenda(double valor) {
+		if(precoVenda<precoCusto) {
+			System.out.println("O preço de venda não renderá nenhum lucro!");
+		}
+		return this.precoVenda;
+		
+	}public void CalculoprecoVenda() {
+		this.precoVenda = this.precoCusto+(this.precoCusto*this.margemLuc)/100;
+		
+	}
+	
+	
+
+	public void exibir() {
+		registrarEntrada(quantidade);
+		registrarSaida(quantidadeVenda);
+		DefinirPrecoVenda(precoVenda);
+		
+	}
+	
+	}
+

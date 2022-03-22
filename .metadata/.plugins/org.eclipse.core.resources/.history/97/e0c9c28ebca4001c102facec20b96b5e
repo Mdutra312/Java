@@ -1,0 +1,15 @@
+package metodo;
+
+public class Aplicacao {
+	String nome;
+	int codigo;
+	double precoCusto;
+	double precoVenda;
+	int quantidade;
+	double margemLuc;
+	public void registrarEntrada() {
+		this.quantidade = quantidade;
+	}
+	
+	
+}

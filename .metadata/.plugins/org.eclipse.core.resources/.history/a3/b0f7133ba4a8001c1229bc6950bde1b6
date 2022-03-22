@@ -1,0 +1,27 @@
+package metodo;
+import java.util.*;
+public class Aplicacao {
+	public static void main(String[] args) {
+	Scanner in = new Scanner(System.in);
+	Produto p = new Produto();
+	int estoque;
+	System.out.println("o nome do produto:");
+	p.nome = in.next();
+	System.out.println("digite o códihgo do produto");
+	p.codigo = in.nextInt();
+	System.out.println("digite o preço d custo:");
+	p.precoCusto = in.nextInt();
+	System.out.println("digite a margem de lucro:");
+	p.margemLuc = in.nextDouble();
+	System.out.println("Digite a quantidadade no estoque:");
+	estoque = in.nextInt();
+	System.out.println("register a quantidade de entrada: ");
+	p.registrarEntrada= in.nextInt();
+	System.out.println("Digite a qantidade de saida:");
+	p.registrarSaida1 = in.nextInt();
+	p.calcularPrecovenda();
+	p.definirPrecoVenda(estoque, s);
+	p.exibirDados();
+	
+	}
+}

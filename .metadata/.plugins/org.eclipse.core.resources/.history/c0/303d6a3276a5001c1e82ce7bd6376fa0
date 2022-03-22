@@ -1,0 +1,26 @@
+package metodo;
+
+import java.util.Scanner;
+
+public class Aplicacao {
+
+	public static void main(String[] args) {
+	
+		Produto p = new Produto();
+		Scanner in = new Scanner(System.in);
+		System.out.println("Digite o nome do produto");
+		p.nome = in.next();
+		System.out.println("Digite o código do produto:");
+		p.codigo = in.nextInt();
+		System.out.println("Digite o valor de custo do produto:");
+		p.precoCusto = in.nextDouble();
+		System.out.println("digite a margem de lucro para produto:");
+		p.margemLuc = in.nextDouble();
+		System.out.println("digite a quantidade do produto:");
+		p.quantidade = in.nextInt();
+		p.exibir();
+		p.CalculoprecoVenda();
+	
+	
+	}
+}
